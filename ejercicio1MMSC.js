@@ -9,7 +9,7 @@ const miArrayCadenas = [];
 for (let i = 0; i < 20; i++) {
     let cantidadCadenas = Math.floor(Math.random() * 3) + 5;
     let cadena = "";
-    
+
     for (let j = 0; j < cantidadCadenas; j++) {
         let cadenaAleatoria = Math.floor(Math.random() * miArray.length);
         cadena += miArray[cadenaAleatoria];
@@ -38,7 +38,7 @@ console.log("d) Array filtrado: ", miArrayFiltrado);
 
 // Desestructurar los tres primeros elementos de miArray y su resto
 const [cad1, cad2, cad3, ...cadResto] = miArray;
-console.log("e.1) Cadenas desestructuradas: ", { cad1, cad2, cad3 });
+console.log("e.1) Cadenas desestructuradas: ", {cad1, cad2, cad3});
 
 // Concatenar todas las cadenas en una sola
 const miCadena = miArray.reduce((acumulador, palabra) => acumulador + palabra, "");
