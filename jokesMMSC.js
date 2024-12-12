@@ -22,8 +22,9 @@ function imprimirChiste(chiste) {
     divChiste.innerHTML = `<div>
         <p>Chiste: ${chiste.value}</p>
         <p>Categorias: ${categorias}</p>
-        <hr>
     </div>`;
+
+    divChiste.classList.add("chiste");
 
     contenedorChistes.appendChild(divChiste);
 }
